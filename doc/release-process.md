@@ -21,7 +21,7 @@ Before every major release:
 Check out the source code in the following directory hierarchy.
 
     cd /path/to/your/toplevel/build
-    git clone https://github.com/elysium-project/gitian.sigs.ltc.git
+    git clone https://github.com/elysium-project/gitian.sigs.elsm.git
     git clone https://github.com/elysium-project/elysium-detached-sigs.git
     git clone https://github.com/devrandom/gitian-builder.git
     git clone https://github.com/elysium-project/elysium.git
@@ -70,9 +70,9 @@ Setup Gitian descriptors:
     git checkout v${VERSION}
     popd
 
-Ensure your gitian.sigs.ltc are up-to-date if you wish to gverify your builds against other Gitian signatures.
+Ensure your gitian.sigs.elsm are up-to-date if you wish to gverify your builds against other Gitian signatures.
 
-    pushd ./gitian.sigs.ltc
+    pushd ./gitian.sigs.elsm
     git pull
     popd
 
@@ -114,16 +114,16 @@ The gbuild invocations below <b>DO NOT DO THIS</b> by default.
 
     pushd ./gitian-builder
     ./bin/gbuild --memory 3000 --commit elysium=v${VERSION} ../elysium/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.ltc/ ../elysium/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-linux --destination ../gitian.sigs.elsm/ ../elysium/contrib/gitian-descriptors/gitian-linux.yml
     mv build/out/elysium-*.tar.gz build/out/src/elysium-*.tar.gz ../
 
     ./bin/gbuild --memory 3000 --commit elysium=v${VERSION} ../elysium/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.ltc/ ../elysium/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-unsigned --destination ../gitian.sigs.elsm/ ../elysium/contrib/gitian-descriptors/gitian-win.yml
     mv build/out/elysium-*-win-unsigned.tar.gz inputs/elysium-win-unsigned.tar.gz
     mv build/out/elysium-*.zip build/out/elysium-*.exe ../
 
     ./bin/gbuild --memory 3000 --commit elysium=v${VERSION} ../elysium/contrib/gitian-descriptors/gitian-osx.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.ltc/ ../elysium/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-unsigned --destination ../gitian.sigs.elsm/ ../elysium/contrib/gitian-descriptors/gitian-osx.yml
     mv build/out/elysium-*-osx-unsigned.tar.gz inputs/elysium-osx-unsigned.tar.gz
     mv build/out/elysium-*.tar.gz build/out/elysium-*.dmg ../
     popd
@@ -134,7 +134,7 @@ Build output expected:
   2. linux 32-bit and 64-bit dist tarballs (`elysium-${VERSION}-linux[32|64].tar.gz`)
   3. windows 32-bit and 64-bit unsigned installers and dist zips (`elysium-${VERSION}-win[32|64]-setup-unsigned.exe`, `elysium-${VERSION}-win[32|64].zip`)
   4. OS X unsigned installer and dist tarball (`elysium-${VERSION}-osx-unsigned.dmg`, `elysium-${VERSION}-osx64.tar.gz`)
-  5. Gitian signatures (in `gitian.sigs.ltc/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
+  5. Gitian signatures (in `gitian.sigs.elsm/${VERSION}-<linux|{win,osx}-unsigned>/(your Gitian key)/`)
 
 ### Verify other gitian builders signatures to your own. (Optional)
 
@@ -145,21 +145,21 @@ Add other gitian builders keys to your gpg keyring
 Verify the signatures
 
     pushd ./gitian-builder
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-linux ../elysium/contrib/gitian-descriptors/gitian-linux.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-unsigned ../elysium/contrib/gitian-descriptors/gitian-win.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-unsigned ../elysium/contrib/gitian-descriptors/gitian-osx.yml
+    ./bin/gverify -v -d ../gitian.sigs.elsm/ -r ${VERSION}-linux ../elysium/contrib/gitian-descriptors/gitian-linux.yml
+    ./bin/gverify -v -d ../gitian.sigs.elsm/ -r ${VERSION}-win-unsigned ../elysium/contrib/gitian-descriptors/gitian-win.yml
+    ./bin/gverify -v -d ../gitian.sigs.elsm/ -r ${VERSION}-osx-unsigned ../elysium/contrib/gitian-descriptors/gitian-osx.yml
     popd
 
 ### Next steps:
 
-Commit your signature to gitian.sigs.ltc:
+Commit your signature to gitian.sigs.elsm:
 
-    pushd gitian.sigs.ltc
+    pushd gitian.sigs.elsm
     git add ${VERSION}-linux/${SIGNER}
     git add ${VERSION}-win-unsigned/${SIGNER}
     git add ${VERSION}-osx-unsigned/${SIGNER}
     git commit -a
-    git push  # Assuming you can push to the gitian.sigs.ltc tree
+    git push  # Assuming you can push to the gitian.sigs.elsm tree
     popd
 
 Wait for Windows/OS X detached signatures:
@@ -171,8 +171,8 @@ Create (and optionally verify) the signed OS X binary:
 
     pushd ./gitian-builder
     ./bin/gbuild -i --commit signature=v${VERSION} ../elysium/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.ltc/ ../elysium/contrib/gitian-descriptors/gitian-osx-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-osx-signed ../elysium/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-osx-signed --destination ../gitian.sigs.elsm/ ../elysium/contrib/gitian-descriptors/gitian-osx-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.elsm/ -r ${VERSION}-osx-signed ../elysium/contrib/gitian-descriptors/gitian-osx-signer.yml
     mv build/out/elysium-osx-signed.dmg ../elysium-${VERSION}-osx.dmg
     popd
 
@@ -180,19 +180,19 @@ Create (and optionally verify) the signed Windows binaries:
 
     pushd ./gitian-builder
     ./bin/gbuild -i --commit signature=v${VERSION} ../elysium/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.ltc/ ../elysium/contrib/gitian-descriptors/gitian-win-signer.yml
-    ./bin/gverify -v -d ../gitian.sigs.ltc/ -r ${VERSION}-win-signed ../elysium/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gsign --signer $SIGNER --release ${VERSION}-win-signed --destination ../gitian.sigs.elsm/ ../elysium/contrib/gitian-descriptors/gitian-win-signer.yml
+    ./bin/gverify -v -d ../gitian.sigs.elsm/ -r ${VERSION}-win-signed ../elysium/contrib/gitian-descriptors/gitian-win-signer.yml
     mv build/out/elysium-*win64-setup.exe ../elysium-${VERSION}-win64-setup.exe
     mv build/out/elysium-*win32-setup.exe ../elysium-${VERSION}-win32-setup.exe
     popd
 
 Commit your signature for the signed OS X/Windows binaries:
 
-    pushd gitian.sigs.ltc
+    pushd gitian.sigs.elsm
     git add ${VERSION}-osx-signed/${SIGNER}
     git add ${VERSION}-win-signed/${SIGNER}
     git commit -a
-    git push  # Assuming you can push to the gitian.sigs.ltc tree
+    git push  # Assuming you can push to the gitian.sigs.elsm tree
     popd
 
 ### After 3 or more people have gitian-built and their results match:
