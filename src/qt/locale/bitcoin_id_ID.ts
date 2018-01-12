@@ -230,8 +230,8 @@
         <translation>Baris tab</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
-        <translation>Permintaan pembayaran (membuat kode QR dan litecoin: URIs)</translation>
+        <source>Request payments (generates QR codes and elysium: URIs)</source>
+        <translation>Permintaan pembayaran (membuat kode QR dan elysium: URIs)</translation>
     </message>
     <message>
         <source>Show the list of used sending addresses and labels</source>
@@ -242,8 +242,8 @@
         <translation>Tampilkan daftar alamat dan label yang diterima</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
-        <translation>Buka URI litecoin: atau permintaan pembayaran</translation>
+        <source>Open a elysium: URI or payment request</source>
+        <translation>Buka URI elysium: atau permintaan pembayaran</translation>
     </message>
     <message>
         <source>&amp;Command-line options</source>

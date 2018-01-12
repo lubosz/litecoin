@@ -13,7 +13,7 @@
 - (NSString *)__bundleIdentifier
 {
     if (self == [NSBundle mainBundle]) {
-        return @"org.litecoin.Elysium-Qt";
+        return @"org.elysium.Elysium-Qt";
     } else {
         return [self __bundleIdentifier];
     }

@@ -242,7 +242,7 @@
         <translation>Раздели</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <source>Request payments (generates QR codes and elysium: URIs)</source>
         <translation>Изискване на плащания(генерира QR кодове и Elysium: URIs)</translation>
     </message>
     <message>
@@ -254,7 +254,7 @@
         <translation>Покажи списък с използваните адреси и имена.</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
+        <source>Open a elysium: URI or payment request</source>
         <translation>Отворете Elysium: URI  или заявка за плащане</translation>
     </message>
     <message>
@@ -1434,7 +1434,7 @@
     <name>WalletView</name>
     </context>
 <context>
-    <name>litecoin-core</name>
+    <name>elysium-core</name>
     <message>
         <source>Options:</source>
         <translation>Опции:</translation>

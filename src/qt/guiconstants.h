@@ -49,7 +49,7 @@ static const int MAX_URI_LENGTH = 255;
 #define SPINNER_FRAMES 36
 
 #define QAPP_ORG_NAME "Elysium"
-#define QAPP_ORG_DOMAIN "litecoin.org"
+#define QAPP_ORG_DOMAIN "elysium.org"
 #define QAPP_APP_NAME_DEFAULT "Elysium-Qt"
 #define QAPP_APP_NAME_TESTNET "Elysium-Qt-testnet"
 

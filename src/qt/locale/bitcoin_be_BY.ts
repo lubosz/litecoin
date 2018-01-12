@@ -218,7 +218,7 @@
         <translation>Дапамога</translation>
     </message>
     <message>
-        <source>Request payments (generates QR codes and litecoin: URIs)</source>
+        <source>Request payments (generates QR codes and elysium: URIs)</source>
         <translation>Запатрабаваць плацёж (генеруецца QR-код для Elysium URI)</translation>
     </message>
     <message>
@@ -230,7 +230,7 @@
         <translation>Паказаць спіс адрасоў і метак для прымання</translation>
     </message>
     <message>
-        <source>Open a litecoin: URI or payment request</source>
+        <source>Open a elysium: URI or payment request</source>
         <translation>Адкрыць Elysium: URI ці запыт плацяжу</translation>
     </message>
     <message>

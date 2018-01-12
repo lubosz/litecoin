@@ -21,7 +21,7 @@ Construct a linear, no-fork, best version of the blockchain.
 
 ### [Qos](/contrib/qos) ###
 
-A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Elysium network. This means one can have an always-on litecoind instance running, and another local litecoind/litecoin-qt instance which connects to this node and receives blocks from it.
+A Linux bash script that will set up traffic control (tc) to limit the outgoing bandwidth for connections to the Elysium network. This means one can have an always-on elysiumd instance running, and another local elysiumd/elysium-qt instance which connects to this node and receives blocks from it.
 
 ### [Seeds](/contrib/seeds) ###
 Utility to generate the pnSeed[] array that is compiled into the client.
@@ -30,8 +30,8 @@ Build Tools and Keys
 ---------------------
 
 ### [Debian](/contrib/debian) ###
-Contains files used to package litecoind/litecoin-qt
-for Debian-based Linux systems. If you compile litecoind/litecoin-qt yourself, there are some useful files here.
+Contains files used to package elysiumd/elysium-qt
+for Debian-based Linux systems. If you compile elysiumd/elysium-qt yourself, there are some useful files here.
 
 ### [Gitian-descriptors](/contrib/gitian-descriptors) ###
 Notes on getting Gitian builds up and running using KVM.
@@ -43,7 +43,7 @@ PGP keys used for signing Elysium Core [Gitian release](/doc/release-process.md)
 Scripts and notes for Mac builds. 
 
 ### [RPM](/contrib/rpm) ###
-RPM spec file for building litecoin-core on RPM based distributions
+RPM spec file for building elysium-core on RPM based distributions
 
 Test and Verify Tools 
 ---------------------
@@ -52,4 +52,4 @@ Test and Verify Tools
 Utilities to generate test vectors for the data-driven Elysium tests.
 
 ### [Verify Binaries](/contrib/verifybinaries) ###
-This script attempts to download and verify the signature file SHA256SUMS.asc from litecoin.org.
+This script attempts to download and verify the signature file SHA256SUMS.asc from elysium.org.

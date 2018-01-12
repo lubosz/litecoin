@@ -115,7 +115,7 @@
     </message>
     <message>
         <source>Send coins to a Elysium address</source>
-        <translation>Пошаљите новац на litecoin адресу</translation>
+        <translation>Пошаљите новац на elysium адресу</translation>
     </message>
     <message>
         <source>Change the passphrase used for wallet encryption</source>

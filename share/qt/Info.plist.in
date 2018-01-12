@@ -38,7 +38,7 @@
   <true/>
 
   <key>CFBundleIdentifier</key>
-  <string>org.litecoin.Elysium-Qt</string>
+  <string>org.elysium.Elysium-Qt</string>
 
   <key>CFBundleURLTypes</key>
   <array>
@@ -46,10 +46,10 @@
       <key>CFBundleTypeRole</key>
       <string>Editor</string>
       <key>CFBundleURLName</key>
-      <string>org.litecoin.ElysiumPayment</string>
+      <string>org.elysium.ElysiumPayment</string>
       <key>CFBundleURLSchemes</key>
       <array>
-        <string>litecoin</string>
+        <string>elysium</string>
       </array>
     </dict>
   </array>
@@ -58,7 +58,7 @@
   <array>
     <dict>
       <key>UTTypeIdentifier</key>
-      <string>org.litecoin.paymentrequest</string>
+      <string>org.elysium.paymentrequest</string>
       <key>UTTypeDescription</key>
       <string>Elysium payment request</string>
       <key>UTTypeConformsTo</key>
@@ -68,10 +68,10 @@
       <key>UTTypeTagSpecification</key>
       <dict>
         <key>public.mime-type</key>
-        <string>application/x-litecoin-payment-request</string>
+        <string>application/x-elysium-payment-request</string>
         <key>public.filename-extension</key>
         <array>
-          <string>litecoinpaymentrequest</string>
+          <string>elysiumpaymentrequest</string>
         </array>
       </dict>
     </dict>
@@ -84,7 +84,7 @@
       <string>Editor</string>
       <key>LSItemContentTypes</key>
       <array>
-        <string>org.litecoin.paymentrequest</string>
+        <string>org.elysium.paymentrequest</string>
       </array>
       <key>LSHandlerRank</key>
       <string>Owner</string>

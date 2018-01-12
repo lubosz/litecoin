@@ -3,7 +3,7 @@ Elysium Core 0.13.2
 
 Setup
 ---------------------
-[Elysium Core](http://litecoin.org/en/download) is the original Elysium client and it builds the backbone of the network. However, it downloads and stores the entire history of Elysium transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
+[Elysium Core](http://elysium.org/en/download) is the original Elysium client and it builds the backbone of the network. However, it downloads and stores the entire history of Elysium transactions (which is currently several GBs); depending on the speed of your computer and network connection, the synchronization process can take anywhere from a few hours to a day or more.
 
 Running
 ---------------------
@@ -13,12 +13,12 @@ The following are some helpful notes on how to run Elysium on your native platfo
 
 Unpack the files into a directory and run:
 
-- `bin/litecoin-qt` (GUI) or
-- `bin/litecoind` (headless)
+- `bin/elysium-qt` (GUI) or
+- `bin/elysiumd` (headless)
 
 ### Windows
 
-Unpack the files into a directory, and then run litecoin-qt.exe.
+Unpack the files into a directory, and then run elysium-qt.exe.
 
 ### OS X
 
@@ -26,10 +26,10 @@ Drag Elysium-Core to your applications folder, and then run Elysium-Core.
 
 ### Need Help?
 
-* See the documentation at the [Elysium Wiki](https://litecoin.info/)
+* See the documentation at the [Elysium Wiki](https://elysium.info/)
 for help and more information.
-* Ask for help on [#litecoin](http://webchat.freenode.net?channels=litecoin) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=litecoin).
-* Ask for help on the [ElysiumTalk](https://litecointalk.io/) forums.
+* Ask for help on [#elysium](http://webchat.freenode.net?channels=elysium) on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net?channels=elysium).
+* Ask for help on the [ElysiumTalk](https://elysiumtalk.io/) forums.
 
 Building
 ---------------------
@@ -60,8 +60,8 @@ The Elysium repo's [root README](/README.md) contains relevant information on th
 - [Benchmarking](benchmarking.md)
 
 ### Resources
-* Discuss on the [ElysiumTalk](https://litecointalk.io/) forums.
-* Discuss project-specific development on #litecoin on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=litecoin).
+* Discuss on the [ElysiumTalk](https://elysiumtalk.io/) forums.
+* Discuss project-specific development on #elysium on Freenode. If you don't have an IRC client use [webchat here](http://webchat.freenode.net/?channels=elysium).
 
 ### Miscellaneous
 - [Assets Attribution](assets-attribution.md)

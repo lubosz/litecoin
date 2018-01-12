@@ -99,8 +99,8 @@ namespace boost {
 
 using namespace std;
 
-const char * const BITCOIN_CONF_FILENAME = "litecoin.conf";
-const char * const BITCOIN_PID_FILENAME = "litecoin.pid";
+const char * const BITCOIN_CONF_FILENAME = "elysium.conf";
+const char * const BITCOIN_PID_FILENAME = "elysium.pid";
 
 map<string, string> mapArgs;
 map<string, vector<string> > mapMultiArgs;
@@ -435,7 +435,7 @@ static std::string FormatException(const std::exception* pex, const char* pszThr
     char pszModule[MAX_PATH] = "";
     GetModuleFileNameA(NULL, pszModule, sizeof(pszModule));
 #else
-    const char* pszModule = "litecoin";
+    const char* pszModule = "elysium";
 #endif
     if (pex)
         return strprintf(
@@ -474,7 +474,7 @@ boost::filesystem::path GetDefaultDataDir()
     return pathRet / "Library/Application Support/Elysium";
 #else
     // Unix
-    return pathRet / ".litecoin";
+    return pathRet / ".elysium";
 #endif
 #endif
 }
