@@ -1,4 +1,4 @@
-TOR SUPPORT IN LITECOIN
+TOR SUPPORT IN ELYSIUM
 ======================
 
 It is possible to run Elysium as a Tor hidden service, and connect to such services.

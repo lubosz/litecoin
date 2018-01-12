@@ -43,8 +43,8 @@ This makes it necessary to build boost, or at least the parts used by Elysium Co
 
 ```
 # Pick some path to install boost to, here we create a directory within the elysium directory
-LITECOIN_ROOT=$(pwd)
-BOOST_PREFIX="${LITECOIN_ROOT}/boost"
+ELYSIUM_ROOT=$(pwd)
+BOOST_PREFIX="${ELYSIUM_ROOT}/boost"
 mkdir -p $BOOST_PREFIX
 
 # Fetch the source and verify that it is not tampered with
@@ -75,8 +75,8 @@ You cannot use the BerkeleyDB library from ports, for the same reason as boost a
 
 ```bash
 # Pick some path to install BDB to, here we create a directory within the elysium directory
-LITECOIN_ROOT=$(pwd)
-BDB_PREFIX="${LITECOIN_ROOT}/db4"
+ELYSIUM_ROOT=$(pwd)
+BDB_PREFIX="${ELYSIUM_ROOT}/db4"
 mkdir -p $BDB_PREFIX
 
 # Fetch the source and verify that it is not tampered with
