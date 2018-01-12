@@ -194,10 +194,10 @@ class ComparisonTestFramework(BitcoinTestFramework):
 
     def add_options(self, parser):
         parser.add_option("--testbinary", dest="testbinary",
-                          default=os.getenv("ELYSIUMD", "elysiumd"),
+                          default=os.getenv("LITECOIND", "elysiumd"),
                           help="elysiumd binary to test")
         parser.add_option("--refbinary", dest="refbinary",
-                          default=os.getenv("ELYSIUMD", "elysiumd"),
+                          default=os.getenv("LITECOIND", "elysiumd"),
                           help="elysiumd binary to use for reference nodes (if any)")
 
     def setup_network(self):

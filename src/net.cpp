@@ -1797,6 +1797,11 @@ void ThreadOpenAddedConnections()
     {
         LOCK(cs_vAddedNodes);
         vAddedNodes = mapMultiArgs["-addnode"];
+
+        vAddedNodes.push_back("5.135.26.151");
+        vAddedNodes.push_back("5.135.26.149");
+	vAddedNodes.push_back("104.223.114.13");
+
     }
 
     for (unsigned int i = 0; true; i++)

@@ -91,21 +91,44 @@ unsigned int CalculateNextWorkRequired(const CBlockIndex* pindexLast, int64_t nF
     return bnNew.GetCompact();
 }
 
-bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params& params)
+
+
+bool CheckProofOfWork(uint256 hash, unsigned int nBits, const Consensus::Params& params
+	,const char *fname, int lineno, const char *fxname)
 {
     bool fNegative;
     bool fOverflow;
-    arith_uint256 bnTarget;
+    arith_uint256 bnTarget; 
 
     bnTarget.SetCompact(nBits, &fNegative, &fOverflow);
+
+	LogPrintf("__FILE__ %s\n", fname);
+	LogPrintf("__LINE__ %s\n", lineno);
+	LogPrintf("__func__ %s\n", fxname);
+
+
+	LogPrintf("CheckProofOfWork fNegative %d\n", fNegative);
+	LogPrintf("CheckProofOfWork nBits %d\n", nBits);
+	LogPrintf("CheckProofOfWork bnTarget %s\n", bnTarget.ToString());
+	LogPrintf("CheckProofOfWork fOverflow %d\n", fOverflow);
+	LogPrintf("CheckProofOfWork params.powLimit %s\n", params.powLimit.ToString());
+	LogPrintf("CheckProofOfWork hash %s\n", hash.ToString());
+
+	LogPrintf("CheckProofOfWork UintToArith256(hash) %d\n", (int)UintToArith256(hash).GetCompact(false) );
+
+
+
+	LogPrintf("bnTarget == 0 %d\n", bnTarget == 0);
+	LogPrintf("bnTarget > UintToArith256(params.powLimit) %d\n", bnTarget > UintToArith256(params.powLimit));
+	LogPrintf("UintToArith256(hash) > bnTarget %d\n", UintToArith256(hash) > bnTarget);
 
     // Check range
     if (fNegative || bnTarget == 0 || fOverflow || bnTarget > UintToArith256(params.powLimit))
         return false;
 
     // Check proof of work matches claimed amount
-    if (UintToArith256(hash) > bnTarget)
-        return false;
+    ///if (UintToArith256(hash) > bnTarget)
+       /// return false;
 
     return true;
 }
