@@ -114,7 +114,7 @@
         <translation>Промени &amp;лозинку...</translation>
     </message>
     <message>
-        <source>Send coins to a Litecoin address</source>
+        <source>Send coins to a Elysium address</source>
         <translation>Пошаљите новац на litecoin адресу</translation>
     </message>
     <message>
