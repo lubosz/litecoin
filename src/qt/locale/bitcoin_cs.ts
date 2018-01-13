@@ -1783,8 +1783,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Vygenerované mince musí čekat 120 bloků, než mohou být utraceny. Když jsi vygeneroval tenhle blok, tak byl rozposlán do sítě, aby byl přidán do řetězce bloků. Pokud se mu nepodaří dostat se do řetězce, změní se na &quot;neakceptovaný&quot; a nepůjde utratit. To se občas může stát, pokud jiný uzel vygeneruje blok zhruba ve stejném okamžiku jako ty.</translation>
+        <source>Generated coins must mature 1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Vygenerované mince musí čekat 1 bloků, než mohou být utraceny. Když jsi vygeneroval tenhle blok, tak byl rozposlán do sítě, aby byl přidán do řetězce bloků. Pokud se mu nepodaří dostat se do řetězce, změní se na &quot;neakceptovaný&quot; a nepůjde utratit. To se občas může stát, pokud jiný uzel vygeneruje blok zhruba ve stejném okamžiku jako ty.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2237,8 +2237,8 @@ Adresa: %4
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 9333 or testnet: 19333)</source>
-        <translation>Čekat na spojení na &lt;portu&gt; (výchozí: 9333 nebo testnet: 19333)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 10497 or testnet: 20497)</source>
+        <translation>Čekat na spojení na &lt;portu&gt; (výchozí: 10497 nebo testnet: 20497)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2272,8 +2272,8 @@ Adresa: %4
     </message>
     <message>
         <location line="+27"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 9332 or testnet: 19332)</source>
-        <translation>Čekat na JSON RPC spojení na &lt;portu&gt; (výchozí: 9332 nebo testnet: 19332)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 10498 or testnet: 20498)</source>
+        <translation>Čekat na JSON RPC spojení na &lt;portu&gt; (výchozí: 10498 nebo testnet: 20498)</translation>
     </message>
     <message>
         <location line="+37"/>
@@ -2746,7 +2746,7 @@ například: alertnotify=echo %%s | mail -s &quot;Elysium Alert&quot; admin@foo.
         <translation>Posílat příkazy uzlu běžícím na &lt;ip&gt; (výchozí: 127.0.0.1)</translation>
     </message>
     <message>
-        <location line="-120"/>
+        <location line="-1"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Spustit příkaz, když se změní nejlepší blok (%s se v příkazu nahradí hashem bloku)</translation>
     </message>

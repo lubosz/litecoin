@@ -1774,8 +1774,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Monedele elysium generate se pot cheltui dupa parcurgerea a 120 de blocuri.  După ce a fost generat, s-a propagat în reţea, urmând să fie adăugat lanţului de blocuri.  Dacă nu poate fi inclus in lanţ, starea sa va deveni &quot;neacceptat&quot; si nu va putea fi folosit la tranzacţii.  Acest fenomen se întâmplă atunci cand un alt nod a generat un bloc la o diferenţa de câteva secunde.</translation>
+        <source>Generated coins must mature 1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Monedele elysium generate se pot cheltui dupa parcurgerea a 1 de blocuri.  După ce a fost generat, s-a propagat în reţea, urmând să fie adăugat lanţului de blocuri.  Dacă nu poate fi inclus in lanţ, starea sa va deveni &quot;neacceptat&quot; si nu va putea fi folosit la tranzacţii.  Acest fenomen se întâmplă atunci cand un alt nod a generat un bloc la o diferenţa de câteva secunde.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2228,8 +2228,8 @@ Address: %4
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 9333 or testnet: 19333)</source>
-        <translation>Lista a conectiunile in &lt;port&gt; (initial:  9333 sau testnet: 19333)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 10497 or testnet: 20497)</source>
+        <translation>Lista a conectiunile in &lt;port&gt; (initial:  10497 sau testnet: 20497)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2263,7 +2263,7 @@ Address: %4
     </message>
     <message>
         <location line="+27"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 9332 or testnet: 19332)</source>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 10498 or testnet: 20498)</source>
         <translation type="unfinished"/>
     </message>
     <message>
@@ -2728,7 +2728,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Elysium Alert&quot; admin@foo.
         <translation>Trimite comenzi la nod, ruland pe ip-ul (initial: 127.0.0.1)</translation>
     </message>
     <message>
-        <location line="-120"/>
+        <location line="-1"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Executa comanda cand cel mai bun block se schimba (%s in cmd se inlocuieste cu block hash)</translation>
     </message>

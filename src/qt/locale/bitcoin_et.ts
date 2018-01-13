@@ -1782,8 +1782,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Enne, kui loodud münte saab kulutama asuda, peavad need läbima 120 blokki. Kui sina selle bloki lõid, levitati see, bloki jadasse ühendamiseks, võrgustikku. Kui jadasse ühendamine ei õnnestu, muudetakse tema staatus &quot;keeldutud&quot; olekusse ning seda ei saa kulutada. Selline olukord võib juhtuda, kui mõni teine node loob bloki sinuga samal ajal.</translation>
+        <source>Generated coins must mature 1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Enne, kui loodud münte saab kulutama asuda, peavad need läbima 1 blokki. Kui sina selle bloki lõid, levitati see, bloki jadasse ühendamiseks, võrgustikku. Kui jadasse ühendamine ei õnnestu, muudetakse tema staatus &quot;keeldutud&quot; olekusse ning seda ei saa kulutada. Selline olukord võib juhtuda, kui mõni teine node loob bloki sinuga samal ajal.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2236,8 +2236,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 9333 or testnet: 19333)</source>
-        <translation>Kuula ühendusi pordil &lt;port&gt; (vaikeväärtus: 9333 või testnet: 19333)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 10497 or testnet: 20497)</source>
+        <translation>Kuula ühendusi pordil &lt;port&gt; (vaikeväärtus: 10497 või testnet: 20497)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2271,8 +2271,8 @@ Aadress: %4⏎</translation>
     </message>
     <message>
         <location line="+27"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 9332 or testnet: 19332)</source>
-        <translation>Kuula JSON-RPC ühendusel seda porti &lt;port&gt; (vaikeväärtus: 9332 või testnet: 19332)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 10498 or testnet: 20498)</source>
+        <translation>Kuula JSON-RPC ühendusel seda porti &lt;port&gt; (vaikeväärtus: 10498 või testnet: 20498)</translation>
     </message>
     <message>
         <location line="+37"/>
@@ -2745,7 +2745,7 @@ nt: alertnotify=echo %%s | email -s &quot;Elysium Alert&quot; admin@foo.com
         <translation>Saada käsklusi node&apos;ile IP&apos;ga &lt;ip&gt; (vaikeväärtus: 127.0.0.1)</translation>
     </message>
     <message>
-        <location line="-120"/>
+        <location line="-1"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Käivita käsklus, kui parim plokk muutub (käskluse %s asendatakse ploki hash&apos;iga)</translation>
     </message>

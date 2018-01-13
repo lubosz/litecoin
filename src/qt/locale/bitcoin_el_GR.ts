@@ -1786,8 +1786,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Πρέπει να περιμένετε 120 μπλοκ πριν μπορέσετε να χρησιμοποιήσετε τα νομίσματα που έχετε δημιουργήσει. Το μπλοκ που δημιουργήσατε μεταδόθηκε στο δίκτυο για να συμπεριληφθεί στην αλυσίδα των μπλοκ. Αν δεν μπει σε αυτή θα μετατραπεί σε &quot;μη αποδεκτό&quot; και δε θα μπορεί να καταναλωθεί. Αυτό συμβαίνει σπάνια όταν κάποιος άλλος κόμβος δημιουργήσει ένα μπλοκ λίγα δευτερόλεπτα πριν από εσάς.</translation>
+        <source>Generated coins must mature 1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Πρέπει να περιμένετε 1 μπλοκ πριν μπορέσετε να χρησιμοποιήσετε τα νομίσματα που έχετε δημιουργήσει. Το μπλοκ που δημιουργήσατε μεταδόθηκε στο δίκτυο για να συμπεριληφθεί στην αλυσίδα των μπλοκ. Αν δεν μπει σε αυτή θα μετατραπεί σε &quot;μη αποδεκτό&quot; και δε θα μπορεί να καταναλωθεί. Αυτό συμβαίνει σπάνια όταν κάποιος άλλος κόμβος δημιουργήσει ένα μπλοκ λίγα δευτερόλεπτα πριν από εσάς.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2240,8 +2240,8 @@ Address: %4
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 9333 or testnet: 19333)</source>
-        <translation>Εισερχόμενες συνδέσεις στη θύρα &lt;port&gt; (προεπιλογή: 9333 ή στο testnet: 19333)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 10497 or testnet: 20497)</source>
+        <translation>Εισερχόμενες συνδέσεις στη θύρα &lt;port&gt; (προεπιλογή: 10497 ή στο testnet: 20497)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2275,8 +2275,8 @@ Address: %4
     </message>
     <message>
         <location line="+27"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 9332 or testnet: 19332)</source>
-        <translation>Εισερχόμενες συνδέσεις JSON-RPC στη θύρα &lt;port&gt; (προεπιλογή: 9332 or testnet: 19332)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 10498 or testnet: 20498)</source>
+        <translation>Εισερχόμενες συνδέσεις JSON-RPC στη θύρα &lt;port&gt; (προεπιλογή: 10498 or testnet: 20498)</translation>
     </message>
     <message>
         <location line="+37"/>
@@ -2750,7 +2750,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Elysium Alert&quot; admin@foo.
         <translation>Αποστολή εντολών στον κόμβο &lt;ip&gt; (προεπιλογή: 127.0.0.1)</translation>
     </message>
     <message>
-        <location line="-120"/>
+        <location line="-1"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>Εκτέλεσε την εντολή όταν το καλύτερο μπλοκ αλλάξει(%s στην εντολή αντικαθίσταται από το hash του μπλοκ)</translation>
     </message>

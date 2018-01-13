@@ -1781,8 +1781,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+3"/>
-        <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>Išgautos monetos turi sulaukti 120 blokų, kol jos gali būti naudojamos. Kai sukūrėte šį bloką, jis buvo transliuojamas tinkle ir turėjo būti įtrauktas į blokų grandinę. Jei nepavyksta patekti į grandinę, bus pakeista į &quot;nepriėmė&quot;, o ne &quot;vartojamas&quot;. Tai kartais gali atsitikti, jei kitas mazgas per keletą sekundžių sukuria bloką po jūsų bloko.</translation>
+        <source>Generated coins must mature 1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>Išgautos monetos turi sulaukti 1 blokų, kol jos gali būti naudojamos. Kai sukūrėte šį bloką, jis buvo transliuojamas tinkle ir turėjo būti įtrauktas į blokų grandinę. Jei nepavyksta patekti į grandinę, bus pakeista į &quot;nepriėmė&quot;, o ne &quot;vartojamas&quot;. Tai kartais gali atsitikti, jei kitas mazgas per keletą sekundžių sukuria bloką po jūsų bloko.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2235,8 +2235,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 9333 or testnet: 19333)</source>
-        <translation>Sujungimo klausymas prijungčiai  &lt;port&gt; (pagal nutylėjimą: 9333 arba testnet: 19333)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 10497 or testnet: 20497)</source>
+        <translation>Sujungimo klausymas prijungčiai  &lt;port&gt; (pagal nutylėjimą: 10497 arba testnet: 20497)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2270,8 +2270,8 @@ Adresas: %4</translation>
     </message>
     <message>
         <location line="+27"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 9332 or testnet: 19332)</source>
-        <translation>Klausymas JSON-RPC sujungimui prijungčiai &lt;port&gt; (pagal nutylėjimą: 9332 or testnet: 19332)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 10498 or testnet: 20498)</source>
+        <translation>Klausymas JSON-RPC sujungimui prijungčiai &lt;port&gt; (pagal nutylėjimą: 10498 or testnet: 20498)</translation>
     </message>
     <message>
         <location line="+37"/>
@@ -2734,7 +2734,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Elysium Alert&quot; admin@foo.
         <translation>Siųsti komandą mazgui dirbančiam &lt;ip&gt; (pagal nutylėjimą: 127.0.0.1)</translation>
     </message>
     <message>
-        <location line="-120"/>
+        <location line="-1"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation type="unfinished"/>
     </message>

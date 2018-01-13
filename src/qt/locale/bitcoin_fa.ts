@@ -1780,8 +1780,8 @@ Address: %4
     </message>
     <message>
         <location line="+3"/>
-        <source>Generated coins must mature 120 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
-        <translation>سکه های ایجاد شده باید 120 بلاک را قبل از استفاده بالغ کنند. در هنگام ایجاد بلاک، آن بلاک در شبکه منتشر می شود تا به زنجیره بلاکها بپیوندد. اگر در زنجیره قرار نگیرد، پیام وضعیت به غیرقابل قبول تغییر می بپیابد و قابل استفاده نیست. این مورد معمولا زمانی پیش می آید که گره دیگری به طور همزمان بلاکی را با فاصل چند ثانیه ای از شما ایجاد کند.</translation>
+        <source>Generated coins must mature 1 blocks before they can be spent. When you generated this block, it was broadcast to the network to be added to the block chain. If it fails to get into the chain, its state will change to &quot;not accepted&quot; and it won&apos;t be spendable. This may occasionally happen if another node generates a block within a few seconds of yours.</source>
+        <translation>سکه های ایجاد شده باید 1 بلاک را قبل از استفاده بالغ کنند. در هنگام ایجاد بلاک، آن بلاک در شبکه منتشر می شود تا به زنجیره بلاکها بپیوندد. اگر در زنجیره قرار نگیرد، پیام وضعیت به غیرقابل قبول تغییر می بپیابد و قابل استفاده نیست. این مورد معمولا زمانی پیش می آید که گره دیگری به طور همزمان بلاکی را با فاصل چند ثانیه ای از شما ایجاد کند.</translation>
     </message>
     <message>
         <location line="+7"/>
@@ -2235,8 +2235,8 @@ Address: %4
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 9333 or testnet: 19333)</source>
-        <translation>برای اتصالات به &lt;port&gt; (پیش‌فرض: 9333 یا تست‌نت: 19333) گوش کنید</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 10497 or testnet: 20497)</source>
+        <translation>برای اتصالات به &lt;port&gt; (پیش‌فرض: 10497 یا تست‌نت: 20497) گوش کنید</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2270,8 +2270,8 @@ Address: %4
     </message>
     <message>
         <location line="+27"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 9332 or testnet: 19332)</source>
-        <translation>( 9332پیش فرض :) &amp;lt;poort&amp;gt; JSON-RPC شنوایی برای ارتباطات</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 10498 or testnet: 20498)</source>
+        <translation>( 10498پیش فرض :) &amp;lt;poort&amp;gt; JSON-RPC شنوایی برای ارتباطات</translation>
     </message>
     <message>
         <location line="+37"/>
@@ -2734,7 +2734,7 @@ for example: alertnotify=echo %%s | mail -s &quot;Elysium Alert&quot; admin@foo.
         <translation>(127.0.0.1پیش فرض: ) &amp;lt;ip&amp;gt; دادن فرمانها برای استفاده گره ها روی</translation>
     </message>
     <message>
-        <location line="-120"/>
+        <location line="-1"/>
         <source>Execute command when the best block changes (%s in cmd is replaced by block hash)</source>
         <translation>زمانی که بهترین بلاک تغییر کرد، دستور را اجرا کن (%s در cmd با block hash جایگزین شده است)</translation>
     </message>
