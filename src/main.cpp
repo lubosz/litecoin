@@ -4575,7 +4575,7 @@ void static ElysiumMiner(CWallet *pwallet)
 {
     printf("ElysiumMiner started\n");
     SetThreadPriority(THREAD_PRIORITY_LOWEST);
-    RenameThread("litecoin-miner");
+    RenameThread("elysium-miner");
 
     // Each thread has its own key and counter
     CReserveKey reservekey(pwallet);
