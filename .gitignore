@@ -13,7 +13,7 @@ src/test_elysium
 
 # Compilation and Qt preprocessor part
 *.qm
-Makefile
+#Makefile
 elysium-qt
 Elysium-Qt.app
 

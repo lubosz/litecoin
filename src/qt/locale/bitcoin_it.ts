@@ -249,7 +249,7 @@ Questo prodotto include software sviluppato dal progetto OpenSSL per l&apos;uso 
     <message>
         <location line="+1"/>
         <source>Warning: If you encrypt your wallet and lose your passphrase, you will &lt;b&gt;LOSE ALL OF YOUR ELYSIUM&lt;/b&gt;!</source>
-        <translation>Attenzione: se si cifra il portamonete e si perde la frase d&apos;ordine, &lt;b&gt;SI PERDERANNO TUTTI I PROPRI LITECOIN&lt;/b&gt;!</translation>
+        <translation>Attenzione: se si cifra il portamonete e si perde la frase d&apos;ordine, &lt;b&gt;SI PERDERANNO TUTTI I PROPRI ELYSIUM&lt;/b&gt;!</translation>
     </message>
     <message>
         <location line="+0"/>
@@ -2246,8 +2246,8 @@ Indirizzo: %4
     </message>
     <message>
         <location line="-28"/>
-        <source>Listen for connections on &lt;port&gt; (default: 9333 or testnet: 19333)</source>
-        <translation>Ascolta le connessioni JSON-RPC su &lt;porta&gt; (default: 9333 o testnet: 19333)</translation>
+        <source>Listen for connections on &lt;port&gt; (default: 9388 or testnet: 19388)</source>
+        <translation>Ascolta le connessioni JSON-RPC su &lt;porta&gt; (default: 9388 o testnet: 19388)</translation>
     </message>
     <message>
         <location line="+5"/>
@@ -2281,8 +2281,8 @@ Indirizzo: %4
     </message>
     <message>
         <location line="+27"/>
-        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 9332 or testnet: 19332)</source>
-        <translation>Attendi le connessioni JSON-RPC su &lt;porta&gt; (default: 9332 or testnet: 19332)</translation>
+        <source>Listen for JSON-RPC connections on &lt;port&gt; (default: 9387 or testnet: 19387)</source>
+        <translation>Attendi le connessioni JSON-RPC su &lt;porta&gt; (default: 9387 or testnet: 19387)</translation>
     </message>
     <message>
         <location line="+37"/>
