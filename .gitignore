@@ -1,7 +1,7 @@
 src/*.exe
-src/litecoin
-src/litecoind
-src/test_litecoin
+src/elysium
+src/elysiumd
+src/test_elysium
 .*.swp
 *.*~*
 *.bak
@@ -9,17 +9,17 @@ src/test_litecoin
 *.orig
 *.o
 *.patch
-.litecoin
+.elysium
 
 # Compilation and Qt preprocessor part
 *.qm
 Makefile
-litecoin-qt
+elysium-qt
 Elysium-Qt.app
 
 # Unit-tests
 Makefile.test
-litecoin-qt_test
+elysium-qt_test
 
 # Resources cpp
 qrc_*.cpp

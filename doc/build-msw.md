@@ -84,6 +84,6 @@ Elysium
 -------
 DOS prompt:
 
-	cd \litecoin\src
+	cd \elysium\src
 	mingw32-make -f makefile.mingw
-	strip litecoind.exe
+	strip elysiumd.exe

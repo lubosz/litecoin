@@ -3,7 +3,7 @@
 <plist version="0.9">
 <dict>
 	<key>CFBundleIconFile</key>
-	<string>litecoin.icns</string>
+	<string>elysium.icns</string>
 	<key>CFBundlePackageType</key>
 	<string>APPL</string>
 	<key>CFBundleGetInfoString</key>
@@ -17,17 +17,17 @@
 	<key>CFBundleExecutable</key>
 	<string>Elysium-Qt</string>
 	<key>CFBundleIdentifier</key>
-	<string>org.litecoin.Elysium-Qt</string>
+	<string>org.elysium.Elysium-Qt</string>
         <key>CFBundleURLTypes</key>
         <array>
           <dict>
             <key>CFBundleTypeRole</key>
             <string>Editor</string>
             <key>CFBundleURLName</key>
-            <string>org.litecoin.ElysiumPayment</string>
+            <string>org.elysium.ElysiumPayment</string>
             <key>CFBundleURLSchemes</key>
             <array>
-              <string>litecoin</string>
+              <string>elysium</string>
             </array>
           </dict>
         </array>
